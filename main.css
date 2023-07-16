@@ -4,7 +4,7 @@ body
   line-height:0.6cm;
   padding:2px; 
   background-image:url("https://vinmec-prod.s3.amazonaws.com/images/20210919_152239_412968_2306_3.max-1800x1800.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 .center {
   margin-left: 500px;
