@@ -1,0 +1,48 @@
+body
+{
+  height: 700px;
+  line-height:0.6cm;
+  padding:2px; 
+  background-image:url("https://vinmec-prod.s3.amazonaws.com/images/20210919_152239_412968_2306_3.max-1800x1800.jpg");
+}
+.center {
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top:0%;
+  margin-bottom:0%;
+}
+#input,#select
+{
+ text-align:left;
+}
+#age,#sbp,#tchl,#hdlchl,#rk1
+{
+    height:24px;
+    width:80px;
+}
+#ageo,#sbpo,#tchlo,#hdlchlo,#bpmo,#cso,#dbo,#rk2
+{
+    height:24px;
+    width:130px;
+}
+.c1
+{
+    text-align:right;
+}
+.r
+{
+    font-size:10px;
+}
+#out
+{
+    background-color: rgb(9, 78, 73);
+    padding-top:25px;
+    padding-bottom:25px;
+    color: aliceblue;
+}
+input[type="button"]
+{
+    background-color: rgb(9, 78, 73);
+    color: aliceblue;
+}
+
