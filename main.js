@@ -6,7 +6,7 @@ function calc()
         et=document.getElementById("et").value;
         osm = 2 * na + (bun/2.8) + (glu/18) + (et/4.6);
         osm_d = osm.toFixed(2);
-        document.getElementById("rk1")[0].value = osm_d;
+        document.getElementById("rk1").value = osm_d;
         
         if(osm_d >= 275.00 && osm_d <= 295.00)
         {	
