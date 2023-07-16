@@ -1,0 +1,113 @@
+<script>
+function calc()
+{
+    na=document.getElementById("na").value;
+	bun=document.getElementById("bun").value;
+	glu=document.getElementById("glu").value;
+    et=document.getElementById("et").value;
+    osm = 2 * na + (bun/2.8) + (glu/18) + (et/4.6);
+    osm_d = osm.toFixed(2);
+    document.getElementsByName("rk1")[0].value = osm_d;
+	
+	if(osm_d >= 275.00 && osm_d <= 295.00)
+	{	
+		document.getElementById("r").innerHTML = "<b>Normal Serum Osmolality</b>";
+	}
+	else if(osm_d > 295.00)
+	{
+		document.getElementById("r").innerHTML = 
+		"<b>High Serum Osmolality</b><br>Maybe due to any of these conditions:<br>Hypernatremia (too much sodium)<br>Diabetes insipidus (the kidneys make too much urine)<br>Dehydration (low fluid levels throughout the body)<br>Uremia (too much urea and other waste products in the blood)<br>Hyperglycemia (high blood sugar)<br>Ingestion of a toxic substance (ethanol and other alcohols)<br>Diabetic ketoacidosis"; 
+	}
+	else
+	{
+		document.getElementById("r").innerHTML = "<b>Low Serum Osmolality</b><br>Maybe due to any of these conditions:<br>Hyponatremia(too little sodium)<br>Overhydration (too much fluid retained in the body)";
+	}
+}
+
+function myFunction() {
+  document.getElementById("form").reset();
+}
+
+</script>
+<style>
+body
+{
+  height: 700px;
+  line-height:0.6cm;
+  padding:2px; 
+  background-image:url("E:/sem_5/Web tech/lab_test.png");
+}
+.center {
+  margin-left: 500px;
+  margin-right: 500px;
+  margin-top:0%;
+  margin-bottom:0%;
+}
+#input,#select
+{
+ text-align:left;
+}
+#age,#sbp,#tchl,#hdlchl,#rk1
+{
+    height:24px;
+    width:80px;
+}
+#ageo,#sbpo,#tchlo,#hdlchlo,#bpmo,#cso,#dbo,#rk2
+{
+    height:24px;
+    width:130px;
+}
+.c1
+{
+    text-align:right;
+}
+.r
+{
+    font-size:10px;
+}
+#out
+{
+    background-color: rgb(9, 78, 73);
+    padding-top:25px;
+    padding-bottom:25px;
+    color: aliceblue;
+}
+input[type="button"]
+{
+    background-color: rgb(9, 78, 73);
+    color: aliceblue;
+}
+</style>
+
+<html>
+<body id="body">
+<br><br><br><br>
+<center><strong><h2>Serum Osmolality/Osmolality Calculator</h2></strong></center>
+<form id="form">
+<table class="center">
+<tr><td class="c1">Na(Sodium) </td><td><input type=number id=na>mEq/L
+</td><br></tr>
+<tr>
+<td class="c1">Blood Urea Nitrogen </td><td><input type=number id=bun>&nbsp;
+mg/dL</td><br></tr>
+<tr><td class="c1">Glucose </td><td><input type=number id=glu>&nbsp;
+mg/dL</td></tr><br>
+<tr><td class="c1">Ethanol(EtOH) </td><td><input type=number id=et >&nbsp;
+mg/dL</td></tr><br></table>
+<center><input type="button" value="calculate" onclick="calc();">
+<input type="button"  onclick="myFunction()" value="Reset All"></center>
+</form>
+<center>
+<table id="out"><tr><td>
+Serum Osmolality/Osmolality&nbsp;
+<input type=text name="rk1" >&nbsp; mOsm/Kg
+</td></tr></table>
+</center>
+<br>
+<center>
+<p id="r">results here</p>
+</center>
+<br>
+
+</body>
+</html>
