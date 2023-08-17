@@ -1,3 +1,4 @@
 # Serum-Osmolality-Calculator
+Created a Serum Osmolality Calculator using HTML, CSS, and JavaScript to calculate osmolality levels for medical purposes.
 Osmolality indicates the concentration of all the particles dissolved in body fluid. It is routinely measured in clinical laboratories for the differential diagnosis of disorders related to hydrolytic balance regulation, renal function, and small-molecule poisonings.Serum osmolality is affected by the concentration of blood chemicals like chloride, sodium (Na), proteins, bicarbonate, and glucose. The blood urea nitrogen (BUN) measurement is important for calculating serum osmolality. Specific therapies and toxins that affect an individual’s fluid balance should also be evaluated with serum osmolality.
 The normal serum osmolality should range from 275 to 295 mOsm/kg.
